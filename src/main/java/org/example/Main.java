@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.LinkedList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -18,12 +20,23 @@ public class Main {
 
         int [] nums1 = {1,2,3,0,0,0};
         int [] nums2 = {2,5,6};
-
-
-
         MergeSortedArrays.Merge(nums1, 3, nums2, 3);
-
         System.out.println(java.util.Arrays.toString(nums1));
+
+
+
+        int [] nums3 = {1,2,3,0,4,0};
+        int k = RemoveElement.removeElement(nums3, 3);
+        System.out.println("num3: " + java.util.Arrays.toString(nums3));
+        System.out.println("k: " + k);
+
+        int [] nums4 = {1, 1, 2, 3, 4, 4};
+        int k1 = RemoveDuplicatesFromSortedArray.removeDuplicates(nums4);
+        System.out.println("num4: " + java.util.Arrays.toString(nums4));
+        System.out.println("k1: " + k1);
+
+
+
 
 
     }
